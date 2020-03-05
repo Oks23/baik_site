@@ -8,7 +8,7 @@
                 $('#main').hide();
             }
             // after 2s window will show automatically
-            setTimeout(showWindow, 3000);
+            setTimeout(showWindow, 6000);
 
             $("#green-btn").click(function() {
                 hideWindow();
