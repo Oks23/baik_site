@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/jpg" href="/build/img/favicon.jpg"/>
+    <link rel="stylesheet" href="build/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="build/css/slick.css">
+    <link rel="stylesheet" href="build/css/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio or something</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__name">
+                <span>Шось буде.</span>
+                <div class="header__burger">
+                    <i id="burger" class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class="header__main">
+                <h1>Привіт,</h1>
+                <h1>Я Оксана Баїк</h1>
+                <h1>і цей недосайт колись стане моїм портфоліо.</h1>
+                <a href="#">
+                    <p>Дізнатися більше<i class="fa fa-arrow-right"></i></p>
+                </a>
+            </div>
+            <div class="header__scroll">
+                <a class="header__scroll--link" href="#about"><img src="./build/img/scroll.png" alt="">
+                    <p>Опуститися</p>
+                </a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="about.html">Коротко про це все</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
+                <li><a href="specialists.html">Команда</a></li>
+                <li><a href="blog.html">Шось типу блогу</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="pop-up">
+            <p>Ірино Юріївно, поставите 20?)</p>
+            <img src="build/img/cat.jpg" alt=""><br>
+            <button class='close-btn' id="red-btn" style="background: red; border: 2px solid red">Ще подумаю</button>
+            <button class='close-btn' id="green-btn" style="background: green; border: 2px solid green; font-size: 22px">Поставлю</button>
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__main">
+                <div class="about__main--text">
+                    <h2>Коротко про це все</h2>
+                    <p>Привіт! Мене звати Оксана, останнім часом я зацікавилася Frontend-developmentом і почала в ньому розбиратися. В майбутньому, думаю, що зможу використовувати цей, поки що, недосайт, як власне портфоліо та, можливо, майбутній сайт команди, що займається Веб-розробкою, а поки бавлюся я із цим, довожу все до ладу, поглиблюю свої знання та набираюся досвіду.
+                    </p>
+                    <!--               <p>Щастя, здоров'я!</p>-->
+                    <span>Колись тут будуть посилання на мої соцмережі:</span>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="about__main--img">
+                    <img src="./build/img/about-img.jpg" alt="">
+                </div>
+            </div>
+            <div class="about__info">
+                <div class="about__info--strategic">
+                    <img src="./build/img/about-strateg.png" alt="">
+                    <h3>стратегія</h3>
+                    <p class="about__info--text">Тут ми будемо обговорювати ваше бачення кінцевого продукту та обговорюватимемо всі деталі.</p>
+                </div>
+                <div class="about__info--paint">
+                    <img src="./build/img/about-paint.png" alt="">
+                    <h3>Дизайн</h3>
+                    <p class="about__info--text">Тут дизайнер нашої команди розроблятиме дизайн та складатиме макети продукту, бо, власне, у мене із дизайном геть кепсько.</p>
+                </div>
+                <div class="about__info--edit">
+                    <img src="./build/img/about-edit.png" alt="">
+                    <h3>Реалізація</h3>
+                    <p class="about__info--text">Обіцяємо, що виконаємо всі ваші прохання за короткий термін часу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="number">
+        <div class="container">
+            <div class="number__main">
+                <div class="number__main--text">
+                    <span>32</span>
+                    <p>задоволених клієнта</p>
+                </div>
+                <div class="number__main--text">
+                    <span>65</span>
+                    <p>проєктів</p>
+                </div>
+                <div class="number__main--text">
+                    <span>982</span>
+                    <p>літрів кави</p>
+                </div>
+                <div class="number__main--text">
+                    <span>764</span>
+                    <p>літрів не кави)))</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio__info--menuFilter">
+                <h2>Останні роботи</h2>
+                <ul class="portfolio__ul">
+                    <a data-filter="*" class="portfolio__list" href="#">Всі</a>
+                    <a data-filter=".Print" class="portfolio__list" href="#">
+                        <li>надруковані</li>
+                    </a>
+                    <a data-filter=".Web" class="portfolio__list" href="#">
+                        <li>Web</li>
+                    </a>
+                    <a data-filter=".Design" class="portfolio__list" href="#">
+                        <li>дизайн</li>
+                    </a>
+                    <a data-filter=".Illustration" class="portfolio__list" href="#">
+                        <li>ілюстрації</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div id="gallery1" class="portfolio__pictures">
+                <div class="pictures__elem Print">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-1.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Illustration">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-2.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Web">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-3.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Design">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-4.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Print">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-5.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Design">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-6.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Print">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-7.png" alt="">
+                        <div class="portfolio__block"><a>Дізнатися більше</a></div>
+                    </div>
+                </div>
+                <div class="pictures__elem Web">
+                    <div class="portfolio__item">
+                        <img class="portfolio__elem--image" src="./build/img/portfolio-8.png" alt="">
+                        <div class="portfolio__block">
+                            <a>Дізнатися більше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__more">
+                <a href="portfolio.html">Дізнатися більше<span>➜</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="slider__main">
+            <div class="slider__main--photo">
+                <img src="./build/img/slider-photo3.png" alt="">
+                <p class="slider__main--name">Мазур Віталій</p>
+                <p class="slider__main--prof">доцент кафедри САПР</p>
+            </div>
+            <div class="slider__main--info">
+                <p class="slider__main--quotes" style="margin-left: 15%">“</p>
+                <p class="slider__main--text" style="font-size: 40px; margin-left: 20%"> Добре? Дуже добре!
+                </p>
+                <p class="slider__main--quotes" style="margin-left: 75%">”</p>
+            </div>
+            <div class="slider__main--photo">
+                <img src="./build/img/slider-photo6.png" alt="">
+                <p class="slider__main--name">Іванців Роман-Андрій</p>
+                <p class="slider__main--prof">Кандидат технічних наук, доцент кафедри САПР</p>
+            </div>
+            <div class="slider__main--info">
+                <p class="slider__main--quotes">‘‘</p>
+                <p class="slider__main--text" style="font-size: 35px">Я б прийняв цей сайт навіть не у дівчинки.
+                </p>
+                <p class="slider__main--quotes" style="margin-left: 95%">”</p>
+            </div>
+            <div class="slider__main--photo">
+                <img src="./build/img/slider-img7.png" alt="">
+                <p class="slider__main--name">Андрій Миколишин</p>
+                <p class="slider__main--prof">Відданий студент кафедри САПР</p>
+            </div>
+            <div class="slider__main--info">
+                <p class="slider__main--quotes">‘‘</p>
+                <p class="slider__main--text" style="font-size: 35px; margin-left:5%">Ну, тут видна чиста робота КН-207.
+                </p>
+                <p class="slider__main--quotes" style="margin-left: 85%">”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="blog__main">
+                <div class="blog__main--block1">
+                    <div class="blog__main--block1Text">
+                        <h2>цікаві статті</h2>
+                        <p class="blog__main--block1TextMore">З часом тут будуть різні цікаві статті про всяке різне.
+                        </p>
+                        <p class="blog__main--block1TextMore">Хоча, я навіть зараз якісь додам, можливо і не по темі, але класні.</p>
+                    </div>
+                    <div class="blog__main--block1More">
+                        <div class="blog__main--blockOpacity">
+                            <img class="blog__main--photoScale" src="./build/img/blog-photo3.png" alt="">
+                        </div>
+                        <p class="blog__main--blockMoreText"><a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42" target="_blank">7 Modern Life Habits That Can Be Incredibly Bad For Your Brain Health</a></p>
+                        <img class="blog__main--block1MoreTime" src="./build/img/blog-time.png" alt=""><span class="blog__main--block1MoreTimeSpan">8:56 PM</span>
+                        <img class="blog__main--block1MoreHeart" src="./build/img/heart.png" alt=""><span class="blog__main--block1MoreHeartSpan">1K</span>
+                        <p class="blog__main--block1TextPhoto">Lifestyle habits that influence your cognitive health and what to do about them. </p>
+                    </div>
+                </div>
+                <div class="blog__main--block2">
+                    <div class="blog__main--block2More">
+                        <div class="blog__main--blockOpacity">
+                            <img class="blog__main--photoScale" src="./build/img/blog-photo1.png" alt="">
+                        </div>
+                        <p class="blog__main--blockMoreText"><a href="https://medium.com/the-chatbot-guru/designing-chatbot-personalities-6fccc62b745e" target="_blank">Designing Chatbot Personalities</a></p>
+                        <img class="blog__main--block1MoreTime" src="./build/img/blog-time.png" alt=""><span class="blog__main--block1MoreTimeSpan">8:56 PM</span>
+                        <img class="blog__main--block1MoreHeart" src="./build/img/heart.png" alt=""><span class="blog__main--block1MoreHeartSpan">1K</span>
+                        <p class="blog__main--block1TextPhoto">Unfortunately, the quality of most existing chatbots is extremely haphazard.</p>
+                    </div>
+                    <div class="blog__main--block2More-2">
+                        <div class="blog__main--blockOpacity">
+                            <img class="blog__main--photoScale" src="./build/img/blog-photo4.png" alt="">
+                        </div>
+                        <p class="blog__main--blockMoreText">
+                            <a href="https://medium.com/hackernoon/8-top-must-use-tools-to-boost-your-web-development-workflow-de44018a7b98" target="_blank">8 top must-use tools to boost your web development workflow</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blog__main--block3">
+                    <div class="blog__main--block3More">
+                        <div class="blog__main--blockOpacity">
+                            <img class="blog__main--photoScale" src="./build/img/blog-photo2.png" alt="">
+                        </div>
+                        <p class="blog__main--blockMoreText"><a href="https://blog.webiny.com/4-problems-of-web-development-from-developers-perspective-af7df512b32e" target="_blank">4 Problems of Web Development — from Developer’s perspective</a></p>
+                    </div>
+                    <div class="blog__main--block3More-2">
+                        <div class="blog__main--blockOpacity">
+                            <img class="blog__main--photoScale" src="./build/img/blog-photo5.png" alt="">
+                        </div>
+                        <p class="blog__main--blockMoreText"><a href="https://medium.com/hackernoon/why-is-python-so-slow-e5074b6fe55b" target="_blank">Why is Python so slow?</a></p>
+                        <img class="blog__main--block1MoreTime" src="./build/img/blog-time.png" alt=""><span class="blog__main--block1MoreTimeSpan">8:56 PM</span>
+                        <img class="blog__main--block1MoreHeart" src="./build/img/heart.png" alt=""><span class="blog__main--block1MoreHeartSpan">1K</span>
+                        <p class="blog__main--block1TextPhoto">Python is booming in popularity. It is used in DevOps, Data Science, Web Development and Security.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog__more">
+                <a href="blog.html">Дізнатися більше<span>➜</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contact">
+                <div class="footer__contact--text footer__contact--bottom">
+                    <h2>Контакти</h2>
+                    <p style="font-size: 20px;">Тут залишаю свої поштові скриньки (справжні, тому пишіть в разі чого) та в майбутньому залишу номер телефону</p>
+                </div>
+                <div class="footer__contact--email footer__contact--bottom">
+                    <i class="fa fa-envelope"></i><span>E-mail адреси</span>
+                    <p><a class="footer__contact--link" href="">baik00oks@gmail.com</a></p>
+                    <p><a class="footer__contact--link" href="">oxana2000465@gmail.com</a></p>
+                </div>
+                <div class="footer__contact--tel footer__contact--bottom">
+                    <i class="fa fa-mobile"></i><span>Телефон</span>
+                    <p><a class="footer__contact--link" href="">+ 380 101 010 111</a></p>
+                    <p><a class="footer__contact--link" href="">+ 380 011 010 110</a></p>
+                </div>
+            </div>
+            <form class="footer__form">
+                <div class="footer__form--main">
+                    <div class="footer__form--message">
+                        <input required type="text" id="message" name="message" placeholder=" ">
+                        <label for="message" style="font-size: 20px;">Напишіть своє повідомлення:</label>
+                    </div>
+                    <div class="footer__form--name">
+                        <input required type="text" id="name" name="name" placeholder=" ">
+                        <label for="name" style="font-size: 20px;">Введіть ваше ім'я:</label>
+                        <div class="footer__form--subject">
+                            <input required type="text" id="subject" name="subject" placeholder=" ">
+                            <label for="subject" style="font-size: 15px;">Введіть причину звернення:</label>
+                        </div>
+                    </div>
+                </div>
+                <input class="footer__send" type="submit" value="Надіслати">
+            </form>
+        </div>
+        <div id="scroolUp"><i class="fas fa-arrow-up"></i></div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="build/js/slick.min.js"></script>
+    <script src="build/js/script.js"></script>
+</body></html>
